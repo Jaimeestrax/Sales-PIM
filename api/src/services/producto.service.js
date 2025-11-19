@@ -8,12 +8,12 @@ export const crearProducto = async (data) => {
 
 // obtener todos los productos
 export const obtenerProductos = async () => {
-  return await productoModel.find().populate('Marca Categoria');
+  return await productoModel.find().populate('id_marca id_categoria');
 };
 
 // obtener un producto especifico
 export const obtenerProductoPorId = async (id) => {
-  return await productoModel.findById(id).populate('Marca Categoria');
+  return await productoModel.findById(id).populate('id_marca id_categoria');
 };
 
 // actualizar un producto
