@@ -12,10 +12,6 @@ const inventarioSchema = new mongoose.Schema({
     required: true,
     min: 0,
     default: 0
-  },
-  ultima_actualizacion: {
-    type: Date,
-    default: Date.now
   }
 }, {
   timestamps: true,
