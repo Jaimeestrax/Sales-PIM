@@ -14,7 +14,7 @@ app.use('/api/categorias', rutasCategoria);
 app.use('/api/inventarios', rutasInventario);
 app.use('/api/marcas', rutasMarca);
 app.use('/api/productos', rutasProducto);
-app.use('/api/proovedores', rutasProovedor);
+app.use('/api/proveedores', rutasProovedor);
 
 app.listen(port, () => {
     console.log(`Server listening on http://localhost:${port}`);
